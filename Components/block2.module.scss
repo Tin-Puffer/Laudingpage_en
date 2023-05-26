@@ -1,0 +1,67 @@
+.reason{
+    background: url('https://amis.misa.vn/sites/amis/images/pages/amis-accounting/bg_reason.svg') no-repeat center;
+    background-size: contain;
+    margin-top: 50px;
+    padding: 50px 0;
+   .buttonTry{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    a{
+        color: #fff;
+        text-align: center;
+        padding: 12px 50px 10px 22px;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: 600;
+        background: #4262ef url('https://amis.misa.vn/sites/amis/images/pages/amis-accounting/ic_arrow-right-white.svg') right 18px center no-repeat;
+        background-size: 16px;
+    }
+   }
+
+    .titleh2{
+         font-family: GoogleSans Bold,Arial,sans-serif !important;
+        padding: 0 15px;
+        text-align: center;
+     
+        font-size: 28px;
+    }
+    .reasonWrap{
+        margin: 0;
+        padding-top: 30px;
+        line-height: 1.42857143;
+        font-size: 16px;
+    }
+    .reasonItem{
+        border-radius: 8px;
+    box-shadow: 10px 10px 23px rgb(66 98 239/18%);
+    padding: 20px;
+    display: flex;
+    background: #fff;
+    height: 100%;
+    .reasonItemImg{
+        width: 40px;
+    }
+    }
+    .imgResponsive{
+        display: block;
+        max-width: 100%;
+        height: auto;
+
+    }
+    .reasonItemContent{
+        width: -webkit-calc(100% - 40px);
+         padding-left: 15px;
+         font-family: GoogleSans Bold,Arial,sans-serif;
+         .Iitle{
+            font-size: 20px;
+            font-weight: 600;
+            padding-bottom: 8px;
+            padding-top: 6px;
+         }
+         .des{
+            line-height: 1.42857143;
+            font-size: 16px;
+         }
+    }
+}

@@ -1,5 +1,6 @@
-import { Row, Col } from "antd";
+
 import Head from "next/head";
+import { Block1,Block2 } from "../Components";
 import styles from "../styles/home.module.css";
 
 export default function Home() {
@@ -12,9 +13,9 @@ export default function Home() {
       </Head>
 
       <div>
-        <Row>
-          <Col span={10}></Col>
-        </Row>
+        <Block1></Block1>
+        <Block2></Block2>
+
       </div>
     </div>
   );
