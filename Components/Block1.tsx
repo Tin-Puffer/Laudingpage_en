@@ -12,12 +12,12 @@ export function Block1() {
               <div className={css.contentRight}>
                 <div className={css.title}>HỆ THỐNG LOGISFORCE</div>
                 <h1 className={css.title2}>
-                  Dễ dàng kết nối phòng các ban và làm việc trên một nền tảng
+                  Dễ dàng kết nối các phòng ban và làm việc trên một nền tảng
                   duy nhất
                 </h1>
                 <div className={css.decription}>
-                  Được xây dựng trên nền tảng salesforce. <br />
-                  Logisforce với phân hệ đa dạng và tích hợp nhiều nền tảng,{" "}
+                  Được xây dựng trên nền tảng Salesforce. <br />
+                  LogisForce với phân hệ đa dạng và tích hợp nhiều nền tảng,{" "}
                   <br />
                   giúp nâng cao hiệu quả{" "}
                   <span className="nowrap">quản lý doanh nghiệp.</span>

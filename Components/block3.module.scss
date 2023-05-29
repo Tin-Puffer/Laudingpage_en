@@ -1,0 +1,77 @@
+.content{
+    margin: 0 !important;
+    width: 100%;
+    align-items: center;
+}
+.ImageB3{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.od1{
+    order: 2;
+}
+.solutionText{
+    font-size: 16px;
+    float: left;
+    .itemHead{
+        display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    }
+    .imageRepon{
+        display: block;
+    max-width: 100%;
+    height: auto;
+    }
+    .itemTitle{
+        width: calc(100% - 80px);
+        line-height: 1.3;
+        font-size: 24px;
+    padding-left: 20px;
+    margin: 0;
+    span{
+        color: #4262ef;
+    }
+    }
+    .itemContent{
+     
+        font-size: 16px;
+    line-height: 1.42857143;
+    }
+    .SlBtn{
+        display: flex;
+        padding-top: 30px;
+        justify-content: center;
+        a{
+            color: #fff;
+    text-align: center;
+    padding: 12px 50px 10px 22px;
+    border-radius: 25px;
+    background: #4262ef url('https://amis.misa.vn/sites/amis/images/pages/amis-accounting/ic_arrow-right-white.svg') right 18px center no-repeat;
+    background-size: 16px;
+    font-family: GoogleSans Bold,Arial,sans-serif;
+    box-shadow: 10px 10px 16px rgb(63 106 240/19%);
+    &:hover{
+        opacity: .8;
+    }
+        }
+    }
+
+}
+@media only screen and (max-width: 991px){
+    .content{      
+     max-width: 500px;
+     margin: auto !important;
+    }
+    .od1{
+        order: 0;
+    }
+}
+@media only screen and (min-width: 991px){
+    .solutionText{
+        direction: ltr;
+        padding-left: 80px;
+    }
+    
+}
