@@ -10,6 +10,13 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 100%;
+}
+.imageD{
+    width: 100%;
+    height: auto;
+    padding: 0 50px;
+    max-width: 350px;
 }
 .box{
 min-height: 80px;
@@ -35,6 +42,29 @@ padding:  0 20px;
     flex-wrap: wrap;
     justify-content: center;
     
+}
+.center{
+    text-align: center;
+}
+.imageItem{
+    height: auto;
+    width: 100%;
+    max-width: 250px;
+   
+    padding: 0 40px;
+}
+.CoplistVT{
+    flex-wrap: wrap;
+    justify-content: center;
+    .CopItem{
+        height: auto;
+        width: 100%;
+        margin-right: 20px;
+    }
+    .BoxItem{
+        width: 180px;
+        
+    }
 }
 .botItem{
     min-height: 100px;

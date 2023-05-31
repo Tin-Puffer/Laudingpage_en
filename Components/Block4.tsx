@@ -3,8 +3,33 @@ import cssB1 from "./block1.module.scss";
 import cssB3 from "./block3.module.scss";
 import { Col, Form, Row } from "antd";
 import Image from "next/image";
-import { B3, banner } from "../public/staticImage/index";
+import {
+  v1,
+  v2,
+  v3,
+  v4,
+  v5,
+  v6,
+  v7,
+  v8,
+  v9,
+  v10,
+  v11,
+  v12,
+  c1,
+  c2,
+  c3,
+  c4,
+  l1,
+  l2,
+  l3,
+  l4,
+  d1,
+  d3,
+  d2,
+} from "../public/staticImage/index";
 import css from "./block4.module.scss";
+const itemvt = [v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12];
 export function Block4() {
   return (
     <>
@@ -25,82 +50,88 @@ export function Block4() {
                 className={[css.box, css.boxLef].join(" ")}
               >
                 <div>
-                <div className={css.includeTitle}>
-                  <p className={css.title}>Bán lẻ</p>
-                 
-                  <Row
-                    className={cssB2.reasonItem}
-                    style={{ marginBottom: "20px", width: "100%" }}
-                  >
-                    <Col span={24}>
-                      <Row style={{ margin: 0, width: "100%" }}>
-                        <Col
-                          span={12}
-                          style={{ height: "50px", backgroundColor: "gray" }}
-                        ></Col>
-                        <Col
-                          span={12}
-                          style={{
-                            height: "50px",
-                            backgroundColor: "blanchedalmond",
-                          }}
-                        ></Col>
-                      </Row>
-                    </Col>
-                    <Col span={24}>
-                      <Row style={{ margin: 0, width: "100%" }}>
-                        <Col
-                          span={12}
-                          style={{ height: "50px", backgroundColor: "blue" }}
-                        ></Col>
-                        <Col
-                          span={12}
-                          style={{
-                            height: "50px",
-                            backgroundColor: "silver",
-                          }}
-                        ></Col>
-                      </Row>
-                    </Col>
-                  </Row>
+                  <div className={css.includeTitle}>
+                    <p className={css.title}>Bán lẻ</p>
+
+                    <Row className={cssB2.reasonItem} style={{ width: "100%" }}>
+                      <Col span={24}>
+                        <Row style={{ margin: 0, width: "100%" }}>
+                          <Col className={css.center} xs={24} sm={12}>
+                            <Image
+                              className={css.imageItem}
+                              src={l1}
+                              alt="cop"
+                            ></Image>
+                          </Col>
+                          <Col className={css.center} xs={24} sm={12}>
+                            <Image
+                              className={css.imageItem}
+                              src={l2}
+                              alt="cop"
+                            ></Image>
+                          </Col>
+                        </Row>
+                      </Col>
+                      <Col span={24}>
+                        <Row style={{ margin: 0, width: "100%" }}>
+                          <Col className={css.center} xs={24} sm={12}>
+                            <Image
+                              className={css.imageItem}
+                              src={l3}
+                              alt="cop"
+                            ></Image>
+                          </Col>
+                          <Col className={css.center} xs={24} sm={12}>
+                            <Image
+                              className={css.imageItem}
+                              src={l4}
+                              alt="cop"
+                            ></Image>
+                          </Col>
+                        </Row>
+                      </Col>
+                    </Row>
                   </div>
                   <div className={css.includeTitle}>
-                  <p className={css.title}>Công nghệ</p>
-                  <Row
-                    className={cssB2.reasonItem}
-                    style={{ width: "100%" }}
-                  >
-                    <Col span={24}>
-                      <Row style={{ margin: 0, width: "100%" }}>
-                        <Col
-                          span={12}
-                          style={{ height: "50px", backgroundColor: "gray" }}
-                        ></Col>
-                        <Col
-                          span={12}
-                          style={{
-                            height: "50px",
-                            backgroundColor: "blanchedalmond",
-                          }}
-                        ></Col>
-                      </Row>
-                    </Col>
-                    <Col span={24}>
-                      <Row style={{ margin: 0, width: "100%" }}>
-                        <Col
-                          span={12}
-                          style={{ height: "50px", backgroundColor: "blue" }}
-                        ></Col>
-                        <Col
-                          span={12}
-                          style={{
-                            height: "50px",
-                            backgroundColor: "silver",
-                          }}
-                        ></Col>
-                      </Row>
-                    </Col>
-                  </Row>
+                    <p className={css.title}>Công nghệ</p>
+                    <Row className={cssB2.reasonItem} style={{ width: "100%" }}>
+                      <Col span={24}>
+                        <Row style={{ margin: 0, width: "100%" }}>
+                          <Col className={css.center} xs={24} sm={12}>
+                            <Image
+                              className={css.imageItem}
+                              src={c1}
+                              alt="cop"
+                            ></Image>
+                          </Col>
+                          <Col className={css.center} xs={24} sm={12}>
+                            <Image
+                              className={css.imageItem}
+                              src={c2}
+                              alt="cop"
+                            ></Image>
+                          </Col>
+                        </Row>
+                      </Col>
+                      <Col span={24}>
+                        <Row style={{ margin: 0, width: "100%" }}>
+                          <Col className={css.center} xs={24} sm={12}>
+                            <Image
+                              className={css.imageItem}
+                              src={c3}
+                              alt="cop"
+                            ></Image>
+                          </Col>
+                          <Col className={css.center} xs={24} sm={12}>
+                            <Image
+                              className={css.imageItem}
+                              src={c4}
+                              alt="cop"
+                            ></Image>
+                          </Col>
+                        </Row>
+                      </Col>
+                    </Row>
                   </div>
                 </div>
               </Col>
@@ -112,7 +143,19 @@ export function Block4() {
               >
                 <div className={css.includeTitle}>
                   <p className={css.title}>Vận tải giao nhận</p>
-                  <div className={cssB2.reasonItem} style={{ width: "100%" }}>
+                  <div
+                    className={[cssB2.reasonItem, css.CoplistVT].join(" ")}
+                    style={{ width: "100%" }}
+                  >
+                    {itemvt.map((e, i) => (
+                      <div key={i} className={css.BoxItem}>
+                        <Image
+                          className={css.CopItem}
+                          src={e}
+                          alt="cop"
+                        ></Image>
+                      </div>
+                    ))}
                     {/* <Image
                       decoding="async"
                    
@@ -127,20 +170,27 @@ export function Block4() {
             </Row>
             <Row style={{ margin: 0, width: "100%" }}>
               <Col xs={24} md={8} className={[css.box].join(" ")}>
-              <div className={css.includeTitle}>
+                <div className={css.includeTitle}>
                   <p className={css.title}>Tư vấn</p>
-                <div className={cssB2.reasonItem} style={{width:"100%"}}></div>
+                  <div className={cssB2.reasonItem} style={{ width: "100%" ,justifyContent:"center"}}>
+                    <Image className={css.imageD} src={d1} alt="cop"></Image>
+                  </div>
                 </div>
               </Col>
               <Col xs={24} md={8} className={[css.box].join(" ")}>
-              <div className={css.includeTitle}>
+                <div className={css.includeTitle}>
                   <p className={css.title}>Sản xuất</p>
-                <div className={cssB2.reasonItem} style={{width:"100%"}}></div>
+                  <div className={cssB2.reasonItem} style={{ width: "100%",justifyContent:"center" }}>
+                    <Image className={css.imageD} src={d2} alt="cop"></Image>
+                  </div>
                 </div>
-              </Col><Col xs={24} md={8} className={[css.box].join(" ")}>
-              <div className={css.includeTitle}>
+              </Col>
+              <Col xs={24} md={8} className={[css.box].join(" ")}>
+                <div className={css.includeTitle}>
                   <p className={css.title}>Tài chính</p>
-                <div className={cssB2.reasonItem} style={{width:"100%"}}></div>
+                  <div className={cssB2.reasonItem} style={{ width: "100%",justifyContent:"center" }}>
+                    <Image className={css.imageD} src={d3} alt="cop"></Image>
+                  </div>
                 </div>
               </Col>
             </Row>

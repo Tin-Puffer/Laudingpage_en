@@ -1,7 +1,11 @@
 import css from "./block1.module.scss";
 import { Col, Row } from "antd";
 import Image from "next/image";
-import { banner } from "../public/staticImage/index";
+import { B1L, banner } from "../public/staticImage/index";
+export function scrollToDiv() {
+  var targetDiv = document.getElementById("targetDiv");
+  targetDiv?.scrollIntoView({ behavior: "smooth" });
+}
 export function Block1() {
   return (
     <>
@@ -23,16 +27,13 @@ export function Block1() {
                   <span className="nowrap">quản lý doanh nghiệp.</span>
                 </div>
                 <div className={css.grBtn}>
-                  <a className={css.bntFree} href="#">
+                  <a className={css.bntFree} href="#targetDiv">
                     Dùng thử miễn phí
                   </a>
-                  <a className={css.bntTv} href="#">
+                  <a className={css.bntTv}  href="#targetDiv">
                     Đăng ký tư vấn
                   </a>
-                  <a
-                    className={css.btnBuy}
-                    href="#"
-                  >
+                  <a className={css.btnBuy}  href="#targetDiv">
                     Mua ngay
                   </a>
                 </div>
@@ -42,7 +43,7 @@ export function Block1() {
               <div className={css.contentLeft}>
                 <Image
                   loading="lazy"
-                  src={banner}
+                  src={B1L}
                   alt=" Kế toán"
                   className={css.imageright}
                   data-ll-status="loaded"

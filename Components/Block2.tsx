@@ -6,7 +6,7 @@ import { banner, i1, i2, i3, i4, Icon } from "../public/staticImage/index";
 export function Block2() {
   return (
     <>
-      <div className={css.reason}>
+      <div className={css.reason} style={{color:"black",backgroundColor:"white"}}>
         <div className={cssB1.content}>
           <Row>
             <Col span={24}>
@@ -111,7 +111,7 @@ export function Block2() {
               </Col>
             </Row>
             <Col span={24} className={css.buttonTry}>
-              <a href="#">Dùng thử miễn phí</a>
+              <a  href="#targetDiv">Dùng thử miễn phí</a>
             </Col>
           </Row>
         </div>

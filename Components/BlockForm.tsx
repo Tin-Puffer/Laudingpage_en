@@ -106,7 +106,7 @@ export function BlockForm() {
   };
   return (
     <>
-      <div className={[css.container, cssF.bgi].join(" ")}>
+      <div style={{color:"black"}} className={[css.container, cssF.bgi].join(" ")} id="targetDiv">
         <div className={[css.content].join(" ")}>
           <Row className={cssF.content} style={{}}>
             <Col className={css.colCustom} xs={24} md={18} lg={12}>
@@ -125,7 +125,9 @@ export function BlockForm() {
               <div className={[css.contentLeft, cssF.conentItem].join(" ")}>
                 <form className={cssF.formClass} onSubmit={handleSubmit}>
                   <h2 style={{ margin: 0 }}>
-                    Đăng ký ngay 15 ngày dùng thử miễn phí hệ thống <span style={{color:"#4262ef"}}> LogisForce</span> 
+                  <span style={{ color: "#4262ef" }}> </span>
+                  Đăng ký ngay 15 ngày dùng thử miễn phí hệ thống{" "}
+                    <span style={{ color: "#4262ef" }}> LogisForce</span>
                   </h2>
                   <div className={cssF.boxInput}>
                     <p>Tên</p>
@@ -254,14 +256,14 @@ export function BlockForm() {
                   </div>
                   {/* Các trường dữ liệu khác */}
                   <div className={cssF.submit}>
-                
-                      <input
-                        className={[cssF.inputSubmit, load && cssF.loading].join(' ')}
-                        type="submit"
-                        name="submit"
-                        value={"Nhận tư vấn miễn phí"}
-                      />
-                  
+                    <input
+                      className={[cssF.inputSubmit, load && cssF.loading].join(
+                        " "
+                      )}
+                      type="submit"
+                      name="submit"
+                      value={"Nhận tư vấn miễn phí"}
+                    />
                   </div>
                 </form>
               </div>
