@@ -1,6 +1,6 @@
-
 import Head from "next/head";
-import { Block1,Block2, Block3 } from "../Components";
+import { Block1, Block2, Block3, Block4 } from "../Components";
+import { BlockForm } from "../Components/BlockForm";
 import styles from "../styles/home.module.css";
 
 export default function Home() {
@@ -13,10 +13,11 @@ export default function Home() {
       </Head>
 
       <div>
+        <BlockForm></BlockForm>
         <Block1></Block1>
         <Block2></Block2>
         <Block3></Block3>
-
+        <Block4></Block4>
       </div>
     </div>
   );

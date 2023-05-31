@@ -31,18 +31,7 @@
         line-height: 1.42857143;
         font-size: 16px;
     }
-    .reasonItem{
-        border-radius: 8px;
-    box-shadow: 10px 10px 23px rgb(66 98 239/18%);
-    padding: 20px;
-    display: flex;
-    background: #fff;
-    height: 100%;
-    align-items: center;
-    .reasonItemImg{
-        width: 40px;
-    }
-    }
+  
     .imgResponsive{
         display: block;
         max-width: 100%;
@@ -64,4 +53,16 @@
             font-size: 16px;
          }
     }
+}
+.reasonItem{
+    border-radius: 8px;
+box-shadow: 10px 10px 23px rgb(66 98 239/18%);
+padding: 20px;
+display: flex;
+background: #fff;
+height: 100%;
+align-items: center;
+.reasonItemImg{
+    width: 40px;
+}
 }
