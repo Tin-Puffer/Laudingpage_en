@@ -10,7 +10,7 @@ export function Block3() {
       <div className={cssB2.reason} style={{ background: "white" }}>
         <div className={cssB1.content}>
           <Row>
-            <Col span={24} style={{ marginBottom: "30px" }}>
+            <Col span={24} className={cssB1.colMg}>
               <h2 className={cssB2.titleh2}>
                 LogisForce - Tối ưu hóa chi phí và quy trình vận hành
                 <p style={{ margin: "0" }}>cho doanh nghiệp Logistics </p>
@@ -51,7 +51,8 @@ export function Block3() {
                 xs={24}
                 md={24}
                 lg={12}
-                style={{ textAlign: "center", padding: "30px" }}
+                className={css.ColItem}
+                // style={{ textAlign: "center", padding: "30px" }}
               >
                 <Image
                   decoding="async"
@@ -98,7 +99,8 @@ export function Block3() {
                 xs={24}
                 md={24}
                 lg={12}
-                style={{ textAlign: "center", padding: "30px" }}
+                className={css.ColItem}
+                // style={{ textAlign: "center", padding: "30px" }}
               >
                 <Image
                   decoding="async"

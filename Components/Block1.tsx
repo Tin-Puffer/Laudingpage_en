@@ -7,7 +7,7 @@ export function Block1() {
     <>
       <div className={css.container}>
         <div className={css.content}>
-          <Row style={{ margin: "0 15px",justifyContent:"center" }}>
+          <Row className={css.RowFix}>
             <Col className={css.colCustom} xs={24} md={18} lg={12}>
               <div className={css.contentRight}>
                 <div className={css.title}>HỆ THỐNG LOGISFORCE</div>

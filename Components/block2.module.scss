@@ -2,7 +2,7 @@
     background: url('https://amis.misa.vn/sites/amis/images/pages/amis-accounting/bg_reason.svg') no-repeat center;
     background-size: contain;
     margin-top: 50px;
-    padding: 50px 0;
+    padding: 30px 0;
    .buttonTry{
     display: flex;
     justify-content: center;
@@ -53,6 +53,13 @@
             font-size: 16px;
          }
     }
+}
+.colMg{
+    margin-bottom: 30px !important;
+}
+.ColItem{
+    text-align: center;
+    padding: 30px;
 }
 .reasonItem{
     border-radius: 8px;

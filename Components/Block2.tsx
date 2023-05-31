@@ -17,7 +17,7 @@ export function Block2() {
             <Row
               className={css.reasonWrap}
               gutter={[50, 30]}
-              style={{ margin: 0 }}
+             
             >
               <Col xs={24} sm={24} md={12}>
                 <div className={css.reasonItem}>
