@@ -55,6 +55,13 @@ import dt7 from "./doitac/22.png";
 import dt8 from "./doitac/23.png";
 import dt9 from "./doitac/24.png";
 
+import f1 from "./footer/13.png";
+import f2 from "./footer/14.png";
+import f3 from "./footer/15.png";
+import f4 from "./footer/16.png";
+import f5 from "./footer/17.png";
+
+
 
 import logo from "./Logo.png";
 
@@ -77,4 +84,5 @@ export{ banner, Icon,B3 ,i1,i2,i3,i4,B1L ,
     d1,d2,d3,
     dt1,dt2,dt3,dt4,dt5,dt6,dt7,dt8,dt9,
     logo,
+    f1,f2,f3,f4,f5
 }

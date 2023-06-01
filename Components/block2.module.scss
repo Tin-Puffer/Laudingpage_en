@@ -12,9 +12,10 @@
         text-align: center;
         padding: 12px 50px 10px 22px;
         border-radius: 25px;
-        font-size: 16px;
-        font-weight: 600;
-        background: #4262ef url('https://amis.misa.vn/sites/amis/images/pages/amis-accounting/ic_arrow-right-white.svg') right 18px center no-repeat;
+        font-size: 17px;
+        font-weight: bold;
+        background: #4262ef url('https://amis.misa.vn/sites/amis/images/pages/amis-accounting/ic_arrow-right-white.svg')  no-repeat;
+        background-position: right 18px center;
         background-size: 16px;
     }
    }
@@ -50,7 +51,7 @@
          }
          .des{
             line-height: 1.42857143;
-            font-size: 16px;
+            font-size: 17px;
          }
     }
 }

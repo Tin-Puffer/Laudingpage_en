@@ -57,12 +57,13 @@
 .inputSubmit{
     width: auto!important;
     border-radius: 30px!important;
-    padding: 0 30px!important;
+    // padding: 0 30px!important;
     font-size: 16px!important;
     font-weight: 400!important;
     background: #4262f0!important;
     margin-top: 15px!important;
-    min-height: 40px !important;
+    padding: 12px 18px;
+    font-weight: bold;
    border: none;
    color: white;
    .loading{
@@ -84,5 +85,10 @@
         top: 100%;
         left: 5px;
         color: red;
+    }
+}
+@media only screen and (max-width: 576px){
+    .conentItem{
+        padding: 0 !important;
     }
 }

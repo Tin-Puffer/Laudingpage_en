@@ -1,9 +1,48 @@
 .Colcust{
 
 }
+.gridLR{
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.Rowcuts{
+    margin: 0;
+    padding:  40px 20px;
+}
+.FlexItem{
+    display: flex;
+    align-items: center;
+}
 .imageLogo{
-    height: 100px;
+    width: 100%;
     size: 30%;
-    width: auto;
+    height: auto;
     background-size: cover;
+}
+.content{
+    // padding: 20px;
+    p{
+        margin: 5px 0;
+        font-size: 17px;
+    }
+}
+.IconF{
+    height: 30px; 
+    margin-right: 5px;
+    width: auto;
+}
+.IconS{
+    height: 50px;
+    width: auto;
+   
+}
+.LinkMEdia{
+    &:hover{
+        opacity: .7;
+    }
+     & + .LinkMEdia{
+margin-left: 20px;
+}
 }
