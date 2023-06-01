@@ -15,7 +15,7 @@ import B3image3 from "./B3image3.png";
 import B3icon4 from "./B3icon4.png";
 import B3image4 from "./B3image4.png";
 import B3icon5 from "./B3icon5.png";
-import B3image5 from "./B3image5.png";
+import B3image5 from "./security.png";
 import v1 from "./vantai/17.png";
 import v2 from "./vantai/18.png";
 import v3 from "./vantai/19.png";
@@ -26,8 +26,10 @@ import v7 from "./vantai/23.png";
 import v8 from "./vantai/24.png";
 import v9 from "./vantai/25.png";
 import v10 from "./vantai/26.png";
-import v11 from "./vantai/27.png";
-import v12 from "./vantai/28.png";
+import v11 from "./vantai/logo_7.png";
+import v12 from "./vantai/logo_6.png";
+import v13 from "./vantai/logo2.png";
+
 
 import l1 from "./banle/39.png";
 import l2 from "./banle/40.png";
@@ -78,7 +80,7 @@ export{ banner, Icon,B3 ,i1,i2,i3,i4,B1L ,
     B3image4,
     B3icon5,
     B3image5,
-    v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12,
+    v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12,v13,
     l1,l2,l3,l4,
     c1,c2,c3,c4,
     d1,d2,d3,

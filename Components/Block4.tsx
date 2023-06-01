@@ -27,9 +27,10 @@ import {
   d1,
   d3,
   d2,
+  v13,
 } from "../public/staticImage/index";
 import css from "./block4.module.scss";
-const itemvt = [v1, v2, v3, v4, v5, v6, v11, v12];
+const itemvt = [v1, v2, v3, v4, v5, v6,v12,v11,v13];
 export function Block4() {
   return (
     <>
@@ -168,7 +169,7 @@ export function Block4() {
                 </div>
               </Col>
             </Row>
-            <Row style={{ margin: 0, width: "100%" }}>
+            <Row   gutter={60} className={css.MGr} >
               <Col xs={24} md={8} className={[css.box].join(" ")}>
                 <div className={css.includeTitle}>
                   <p className={css.title}>Tư vấn</p>

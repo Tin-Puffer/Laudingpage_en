@@ -9,7 +9,7 @@ export function scrollToDiv() {
 export function Block1() {
   return (
     <>
-      <div className={css.container}>
+      <div className={css.container} style={{padding:"15px 0"}}>
         <div className={css.content}>
           <Row className={css.RowFix}>
             <Col className={css.colCustom} xs={24} md={18} lg={12}>

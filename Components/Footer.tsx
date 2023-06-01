@@ -12,7 +12,7 @@ export function Footer() {
     <>
       <div
         className={cssB2.reason}
-        style={{ background: "white", padding: "0" }}
+        style={{ background: "white", padding: "0", color: "black" }}
       >
         <div className={cssB1.content}>
           <Row className={css.Rowcuts}>

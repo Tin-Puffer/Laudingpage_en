@@ -98,10 +98,12 @@ export function BlockForm() {
             phone: "",
           });
           // Xử lý lỗi (nếu có)
+          alert("thông tin đã được ghi nhận");
         });
     } else {
       console.log("err");
       setLoad(false);
+
     }
   };
   return (
@@ -149,7 +151,7 @@ export function BlockForm() {
                       }}
                       onFocus={() => sfname(false)}
                     />
-                    {fname && <span> * Trường này là bắt buộc </span>}
+                    {fname && <span> * Tên không được để trống </span>}
                   </div>
                   <div className={cssF.boxInput}>
                     <p>Họ</p>
@@ -167,7 +169,7 @@ export function BlockForm() {
                       }}
                       onFocus={() => slname(false)}
                     />
-                    {lname && <span> * Trường này là bắt buộc </span>}
+                    {lname && <span> * Họ không được để trống </span>}
                   </div>{" "}
                   <div className={cssF.boxInput}>
                     <p>Chức vụ</p>
@@ -185,7 +187,7 @@ export function BlockForm() {
                       }}
                       onFocus={() => setTitle(false)}
                     />
-                    {title && <span> * Trường này là bắt buộc </span>}
+                    {title && <span> * Chức vụ không được để trống </span>}
                   </div>{" "}
                   <div className={cssF.boxInput}>
                     <p>Email</p>
@@ -208,9 +210,9 @@ export function BlockForm() {
                         setEmailType(false);
                       }}
                     />
-                    {emai && <span> * Trường này là bắt buộc </span>}
+                    {emai && <span> * Email không được để trống </span>}
                     {!emai && emailType && (
-                      <span> * Email phải có định dạng : abc@gmail.com </span>
+                      <span> * Email phải có định dạng | ex: abc@gmail.com </span>
                     )}
                   </div>{" "}
                   <div className={cssF.boxInput}>
@@ -235,9 +237,9 @@ export function BlockForm() {
                         setPhone(false);
                       }}
                     />
-                    {phone && <span> * Trường này là bắt buộc </span>}
+                    {phone && <span> * SĐT không được để trống </span>}
                     {!phone && phoneType && (
-                      <span> * Nhập đúng định dạng SĐT </span>
+                      <span> * Vui lòng nhập đúng định dạng SĐT </span>
                     )}
                   </div>
                   <div className={cssF.boxInput}>
@@ -256,7 +258,7 @@ export function BlockForm() {
                       }}
                       onFocus={() => setCompany(false)}
                     />
-                    {company && <span> * Trường này là bắt buộc </span>}
+                    {company && <span> * Tên công ty không được để trống </span>}
                   </div>
                   {/* Các trường dữ liệu khác */}
                   <div className={cssF.submit}>
