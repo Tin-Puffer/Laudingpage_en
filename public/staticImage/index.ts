@@ -5,6 +5,9 @@ import i1 from "./1.png";
 import i2 from "./2.png";
 import i3 from "./3.png";
 import i4 from "./4.png";
+import i5 from "./5.png";
+import i6 from "./6.png";
+
 import B1L from "./B1L.png";
 import B3icon1 from "./B3icon1.png";
 import B3image1 from "./B3image1.png";
@@ -69,7 +72,7 @@ import logo from "./Logo.png";
 
 
 
-export{ banner, Icon,B3 ,i1,i2,i3,i4,B1L ,
+export{ banner, Icon,B3 ,i1,i2,i3,i4,i5,i6,B1L ,
     B3icon1,
     B3image1,
     B3icon2,

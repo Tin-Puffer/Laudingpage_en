@@ -30,7 +30,7 @@ import {
   v13,
 } from "../public/staticImage/index";
 import css from "./block4.module.scss";
-const itemvt = [v1, v2, v3, v4, v5, v6,v12,v11,v13];
+const itemvt = [v1, v2, v3, v4, v5, v6, v12, v11, v13];
 export function Block4() {
   return (
     <>
@@ -52,7 +52,7 @@ export function Block4() {
               >
                 <div>
                   <div className={css.includeTitle}>
-                    <p className={css.title}>Bán lẻ</p>
+                    <p className={css.title}>Thương mại & Bán lẻ</p>
 
                     <Row className={cssB2.reasonItem} style={{ width: "100%" }}>
                       <Col span={24}>
@@ -169,11 +169,14 @@ export function Block4() {
                 </div>
               </Col>
             </Row>
-            <Row   gutter={60} className={css.MGr} >
+            <Row gutter={60} className={css.MGr}>
               <Col xs={24} md={8} className={[css.box].join(" ")}>
                 <div className={css.includeTitle}>
                   <p className={css.title}>Tư vấn</p>
-                  <div className={cssB2.reasonItem} style={{ width: "100%" ,justifyContent:"center"}}>
+                  <div
+                    className={cssB2.reasonItem}
+                    style={{ width: "100%", justifyContent: "center" }}
+                  >
                     <Image className={css.imageD} src={d1} alt="cop"></Image>
                   </div>
                 </div>
@@ -181,7 +184,10 @@ export function Block4() {
               <Col xs={24} md={8} className={[css.box].join(" ")}>
                 <div className={css.includeTitle}>
                   <p className={css.title}>Sản xuất</p>
-                  <div className={cssB2.reasonItem} style={{ width: "100%",justifyContent:"center" }}>
+                  <div
+                    className={cssB2.reasonItem}
+                    style={{ width: "100%", justifyContent: "center" }}
+                  >
                     <Image className={css.imageD} src={d2} alt="cop"></Image>
                   </div>
                 </div>
@@ -189,7 +195,10 @@ export function Block4() {
               <Col xs={24} md={8} className={[css.box].join(" ")}>
                 <div className={css.includeTitle}>
                   <p className={css.title}>Tài chính</p>
-                  <div className={cssB2.reasonItem} style={{ width: "100%",justifyContent:"center" }}>
+                  <div
+                    className={cssB2.reasonItem}
+                    style={{ width: "100%", justifyContent: "center" }}
+                  >
                     <Image className={css.imageD} src={d3} alt="cop"></Image>
                   </div>
                 </div>

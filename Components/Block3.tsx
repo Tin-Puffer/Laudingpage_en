@@ -79,13 +79,13 @@ export function Block3() {
                 />
               </Col>
             </Row>
-            <div
+            {/* <div
               style={{
                 padding: "30px",
                 width: "100%",
                 backgroundColor: "white",
               }}
-            ></div>
+            ></div> */}
 
             <Row gutter={[60, 50]} className={css.content}>
               <Col xs={24} md={24} lg={12}>
@@ -135,13 +135,13 @@ export function Block3() {
                 />
               </Col>
             </Row>
-            <div
+            {/* <div
               style={{
                 padding: "30px",
                 width: "100%",
                 backgroundColor: "white",
               }}
-            ></div>
+            ></div> */}
 
             <Row gutter={[60, 50]} className={css.content}>
               <Col xs={24} md={24} lg={12} className={css.od1}>
@@ -157,7 +157,7 @@ export function Block3() {
                       />
                     </div>
                     <h3 className={css.itemTitle}>
-                      Tương thích{" "}
+                       Thích Hợp{" "}
                       <span className=" blue-text"> đa nền tảng</span>
                     </h3>
                   </div>
@@ -192,13 +192,13 @@ export function Block3() {
                 />
               </Col>
             </Row>
-            <div
+            {/* <div
               style={{
                 padding: "30px",
                 width: "100%",
                 backgroundColor: "white",
               }}
-            ></div>
+            ></div> */}
 
             <Row gutter={[60, 50]} className={css.content}>
               <Col xs={24} md={24} lg={12}>
@@ -249,13 +249,13 @@ export function Block3() {
                 />
               </Col>
             </Row>
-            <div
+            {/* <div
               style={{
                 padding: "30px",
                 width: "100%",
                 backgroundColor: "white",
               }}
-            ></div>
+            ></div> */}
 
             <Row gutter={[60, 50]} className={css.content}>
               <Col xs={24} md={24} lg={12} className={css.od1}>
@@ -307,6 +307,7 @@ export function Block3() {
                 />
               </Col>
             </Row>
+            
           </Row>
         </div>
       </div>

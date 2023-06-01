@@ -2,11 +2,23 @@ import css from "./block2.module.scss";
 import cssB1 from "./block1.module.scss";
 import { Col, Row } from "antd";
 import Image from "next/image";
-import { banner, i1, i2, i3, i4, Icon } from "../public/staticImage/index";
+import {
+
+  i1,
+  i2,
+  i3,
+  i4,
+  i5,
+  i6,
+
+} from "../public/staticImage/index";
 export function Block2() {
   return (
     <>
-      <div className={css.reason} style={{color:"black",backgroundColor:"white"}}>
+      <div
+        className={css.reason}
+        style={{ color: "black", backgroundColor: "white" }}
+      >
         <div className={cssB1.content}>
           <Row>
             <Col span={24}>
@@ -14,11 +26,7 @@ export function Block2() {
                 Trải nghiệm đầy đủ các tính năng cao cấp LogisForce{" "}
               </h2>
             </Col>
-            <Row
-              className={css.reasonWrap}
-              gutter={[50, 30]}
-             
-            >
+            <Row className={css.reasonWrap} gutter={[50, 30]}>
               <Col xs={24} sm={24} md={12}>
                 <div className={css.reasonItem}>
                   <div className={css.reasonItemImg}>
@@ -36,7 +44,9 @@ export function Block2() {
                       <span style={{ color: "#4262ef" }}>năng suất</span>
                     </div> */}
                     <div className={css.des}>
-                      <div>Quản lý thông tin khách hàng, đối tác và nhà cung cấp </div>
+                      <div>
+                        Quản lý thông tin khách hàng, đối tác và nhà cung cấp{" "}
+                      </div>
                       {/* <div>Tự động tổng hợp báo cáo thuế, BCTC chính xác, </div> */}
                     </div>
                   </div>
@@ -64,7 +74,8 @@ export function Block2() {
                     </div>
                   </div>
                 </div>
-              </Col><Col xs={24} sm={24} md={12}>
+              </Col>
+              <Col xs={24} sm={24} md={12}>
                 <div className={css.reasonItem}>
                   <div className={css.reasonItemImg}>
                     <Image
@@ -81,12 +92,13 @@ export function Block2() {
                       <span style={{ color: "#4262ef" }}>năng suất</span>
                     </div> */}
                     <div className={css.des}>
-                      <div>Tạo và quản lý lô  hàng xuất nhập khẩu</div>
+                      <div>Quản lý lô hàng FCL, LCL, Consol, Logistics...</div>
                       {/* <div>Tự động tổng hợp báo cáo thuế, BCTC chính xác, </div> */}
                     </div>
                   </div>
                 </div>
-              </Col><Col xs={24} sm={24} md={12}>
+              </Col>
+              <Col xs={24} sm={24} md={12}>
                 <div className={css.reasonItem}>
                   <div className={css.reasonItemImg}>
                     <Image
@@ -103,7 +115,56 @@ export function Block2() {
                       <span style={{ color: "#4262ef" }}>năng suất</span>
                     </div> */}
                     <div className={css.des}>
-                      <div>In tất cả các chứng từ HBL, HAWB, AN, Recharge và Tax Invoice</div>
+                      <div>
+                        In tất cả các chứng từ HBL, HAWB, AN, Recharge và Tax
+                        Invoice...
+                      </div>
+                      {/* <div>Tự động tổng hợp báo cáo thuế, BCTC chính xác, </div> */}
+                    </div>
+                  </div>
+                </div>
+              </Col>
+              <Col xs={24} sm={24} md={12}>
+                <div className={css.reasonItem}>
+                  <div className={css.reasonItemImg}>
+                    <Image
+                      decoding="async"
+                      src={i6}
+                      alt="Nâng cao năng suất"
+                      className={css.imgResponsive}
+                      data-ll-status="loaded"
+                    />
+                  </div>
+                  <div className={css.reasonItemContent}>
+                    {/* <div className={css.Iitle}>
+                      Nâng cao{" "}
+                      <span style={{ color: "#4262ef" }}>năng suất</span>
+                    </div> */}
+                    <div className={css.des}>
+                      <div>Quản lý quy trình phê duyệt online</div>
+                      {/* <div>Tự động tổng hợp báo cáo thuế, BCTC chính xác, </div> */}
+                    </div>
+                  </div>
+                </div>
+              </Col>
+              <Col xs={24} sm={24} md={12}>
+                <div className={css.reasonItem}>
+                  <div className={css.reasonItemImg}>
+                    <Image
+                      decoding="async"
+                      src={i5}
+                      alt="Nâng cao năng suất"
+                      className={css.imgResponsive}
+                      data-ll-status="loaded"
+                    />
+                  </div>
+                  <div className={css.reasonItemContent}>
+                    {/* <div className={css.Iitle}>
+                      Nâng cao{" "}
+                      <span style={{ color: "#4262ef" }}>năng suất</span>
+                    </div> */}
+                    <div className={css.des}>
+                      <div>Quản lý giá mua từ hãng tàu, nhà cung cấp</div>
                       {/* <div>Tự động tổng hợp báo cáo thuế, BCTC chính xác, </div> */}
                     </div>
                   </div>
@@ -111,7 +172,7 @@ export function Block2() {
               </Col>
             </Row>
             <Col span={24} className={css.buttonTry}>
-              <a  href="#targetDiv">Dùng thử miễn phí</a>
+              <a href="#targetDiv">Dùng thử miễn phí</a>
             </Col>
           </Row>
         </div>
