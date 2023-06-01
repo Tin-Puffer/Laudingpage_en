@@ -35,7 +35,7 @@ export function Block3() {
               <Col xs={24} md={24} lg={12} className={css.od1}>
                 <div className={css.solutionText}>
                   <div className={css.itemHead}>
-                    <div style={{ width: "80px" }}>
+                    <div style={{ width: "55px" }}>
                       <Image
                         decoding="async"
                         src={B3icon1}
@@ -89,9 +89,11 @@ export function Block3() {
 
             <Row gutter={[60, 50]} className={css.content}>
               <Col xs={24} md={24} lg={12}>
-                <div className={[css.solutionText,css.solutionTextR].join(' ')}>
+                <div
+                  className={[css.solutionText, css.solutionTextR].join(" ")}
+                >
                   <div className={css.itemHead}>
-                    <div style={{ width: "80px" }}>
+                    <div style={{ width: "55px" }}>
                       <Image
                         decoding="async"
                         src={B3icon2}
@@ -147,7 +149,7 @@ export function Block3() {
               <Col xs={24} md={24} lg={12} className={css.od1}>
                 <div className={css.solutionText}>
                   <div className={css.itemHead}>
-                    <div style={{ width: "80px" }}>
+                    <div style={{ width: "55px" }}>
                       <Image
                         decoding="async"
                         src={B3icon3}
@@ -157,8 +159,7 @@ export function Block3() {
                       />
                     </div>
                     <h3 className={css.itemTitle}>
-                       Thích Hợp{" "}
-                      <span className=" blue-text"> đa nền tảng</span>
+                      Thích Hợp <span className=" blue-text"> đa nền tảng</span>
                     </h3>
                   </div>
                   <div className={css.itemContent}>
@@ -202,9 +203,11 @@ export function Block3() {
 
             <Row gutter={[60, 50]} className={css.content}>
               <Col xs={24} md={24} lg={12}>
-                <div className={[css.solutionText,css.solutionTextR].join(' ')}>
+                <div
+                  className={[css.solutionText, css.solutionTextR].join(" ")}
+                >
                   <div className={css.itemHead}>
-                    <div style={{ width: "80px" }}>
+                    <div style={{ width: "55px" }}>
                       <Image
                         decoding="async"
                         src={B3icon4}
@@ -261,7 +264,7 @@ export function Block3() {
               <Col xs={24} md={24} lg={12} className={css.od1}>
                 <div className={css.solutionText}>
                   <div className={css.itemHead}>
-                    <div style={{ width: "80px" }}>
+                    <div style={{ width: "55px" }}>
                       <Image
                         decoding="async"
                         src={B3icon5}
@@ -307,7 +310,6 @@ export function Block3() {
                 />
               </Col>
             </Row>
-            
           </Row>
         </div>
       </div>
