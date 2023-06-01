@@ -1,7 +1,7 @@
 import { Col, Row } from "antd";
 import Image from "next/image";
 import { useState } from "react";
-import { B3image1, logoDk } from "../public/staticImage";
+import { B3image1, B3image4, logoDk } from "../public/staticImage";
 import css from "./block1.module.scss";
 import cssF from "./blockForm.module.scss";
 
@@ -117,16 +117,16 @@ export function BlockForm() {
           <Row className={cssF.content} style={{}}>
             <Col className={css.colCustom} xs={24} md={18} lg={12}>
               <div className={[css.contentRight, cssF.conentItem].join(" ")}>
-              <div style={{textAlign:"center"}}>
-
-              <Image
+                <div style={{ textAlign: "center" }}>
+                  <Image
                     className={cssF.logoDK}
                     decoding="async"
                     src={logoDk}
                     alt="cop"
                     data-ll-status="loaded"
                   ></Image>
-              </div>
+                </div>
+
                 <h1 className={css.title2}>
                   Đăng ký trải nghiệm, khám phá sức mạnh đột phá của Hệ thống
                   LogisForce
@@ -135,22 +135,21 @@ export function BlockForm() {
                   LogisForce - Tối ưu chi phí, nâng cao hiệu quả vận hành doanh
                   nghiệp Logistics
                 </div>
-                <div className="">
+                <Col xs={0} lg={24} sm={0}>
                   <Image
                     className={cssF.iteamCop}
                     decoding="async"
-                    src={B3image1}
+                    src={B3image4}
                     alt="cop"
                     data-ll-status="loaded"
                   ></Image>
-                </div>
+                </Col>
               </div>
             </Col>
             <Col className={css.colCustom} xs={24} md={24} lg={12}>
               <div className={[css.contentLeft, cssF.conentItem].join(" ")}>
                 <form className={cssF.formClass} onSubmit={handleSubmit}>
                   <h2 style={{ margin: 0 }}>
-                    <span style={{ color: "#4262ef" }}> </span>
                     Đăng ký ngay 15 ngày dùng thử miễn phí hệ thống{" "}
                     <span style={{ color: "#4262ef" }}> LogisForce</span>
                   </h2>
