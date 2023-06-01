@@ -1,6 +1,7 @@
 import { Col, Row } from "antd";
 import Image from "next/image";
 import { useState } from "react";
+import { B3image1, logoDk } from "../public/staticImage";
 import css from "./block1.module.scss";
 import cssF from "./blockForm.module.scss";
 
@@ -103,7 +104,6 @@ export function BlockForm() {
     } else {
       console.log("err");
       setLoad(false);
-
     }
   };
   return (
@@ -117,6 +117,16 @@ export function BlockForm() {
           <Row className={cssF.content} style={{}}>
             <Col className={css.colCustom} xs={24} md={18} lg={12}>
               <div className={[css.contentRight, cssF.conentItem].join(" ")}>
+              <div style={{textAlign:"center"}}>
+
+              <Image
+                    className={cssF.logoDK}
+                    decoding="async"
+                    src={logoDk}
+                    alt="cop"
+                    data-ll-status="loaded"
+                  ></Image>
+              </div>
                 <h1 className={css.title2}>
                   Đăng ký trải nghiệm, khám phá sức mạnh đột phá của Hệ thống
                   LogisForce
@@ -124,6 +134,15 @@ export function BlockForm() {
                 <div className={css.decription}>
                   LogisForce - Tối ưu chi phí, nâng cao hiệu quả vận hành doanh
                   nghiệp Logistics
+                </div>
+                <div className="">
+                  <Image
+                    className={cssF.iteamCop}
+                    decoding="async"
+                    src={B3image1}
+                    alt="cop"
+                    data-ll-status="loaded"
+                  ></Image>
                 </div>
               </div>
             </Col>
@@ -212,7 +231,10 @@ export function BlockForm() {
                     />
                     {emai && <span> * Email không được để trống </span>}
                     {!emai && emailType && (
-                      <span> * Email phải có định dạng | ex: abc@gmail.com </span>
+                      <span>
+                        {" "}
+                        * Email phải có định dạng | ex: abc@gmail.com{" "}
+                      </span>
                     )}
                   </div>{" "}
                   <div className={cssF.boxInput}>
@@ -258,7 +280,9 @@ export function BlockForm() {
                       }}
                       onFocus={() => setCompany(false)}
                     />
-                    {company && <span> * Tên công ty không được để trống </span>}
+                    {company && (
+                      <span> * Tên công ty không được để trống </span>
+                    )}
                   </div>
                   {/* Các trường dữ liệu khác */}
                   <div className={cssF.submit}>

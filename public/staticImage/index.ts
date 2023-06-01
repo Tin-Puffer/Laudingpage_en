@@ -1,5 +1,7 @@
 import banner from "./imgbanner.png";
 import Icon from "./Icon.png";
+import logoDk from "./logo_slc.png";
+
 import B3 from "./B3i.png";
 import i1 from "./1.png";
 import i2 from "./2.png";
@@ -89,5 +91,6 @@ export{ banner, Icon,B3 ,i1,i2,i3,i4,i5,i6,B1L ,
     d1,d2,d3,
     dt1,dt2,dt3,dt4,dt5,dt6,dt7,dt8,dt9,
     logo,
-    f1,f2,f3,f4,f5
+    f1,f2,f3,f4,f5,
+    logoDk
 }

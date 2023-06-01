@@ -93,7 +93,7 @@ export function Block4() {
                       </Col>
                     </Row>
                   </div>
-                  <div className={css.includeTitle}>
+                  <div className={css.includeTitle} style={{marginTop: "30px"}}>
                     <p className={css.title}>Công nghệ</p>
                     <Row className={cssB2.reasonItem} style={{ width: "100%" }}>
                       <Col span={24}>
