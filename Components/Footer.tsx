@@ -20,9 +20,7 @@ export function Footer() {
               <Image src={logo} className={css.imageLogo} alt="logoCty"></Image>
             </Col>
             <Col span={24}>
-              <h2 style={{ margin: "15px 0" }}>
-                CÔNG TY CỔ PHẦN AFR CLOUD COMPUTING
-              </h2>
+              <h2>CÔNG TY CỔ PHẦN AFR CLOUD COMPUTING</h2>
             </Col>
             <Row gutter={[80, 30]} className={css.gridLR}>
               <Col xs={24} sm={24} md={12} className={css.Colcust}>

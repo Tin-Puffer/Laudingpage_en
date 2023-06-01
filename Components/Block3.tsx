@@ -15,7 +15,6 @@ import {
   B3image3,
   B3image4,
   B3image5,
-  banner,
 } from "../public/staticImage/index";
 export function Block3() {
   return (
@@ -90,7 +89,7 @@ export function Block3() {
 
             <Row gutter={[60, 50]} className={css.content}>
               <Col xs={24} md={24} lg={12}>
-                <div className={css.solutionText}>
+                <div className={[css.solutionText,css.solutionTextR].join(' ')}>
                   <div className={css.itemHead}>
                     <div style={{ width: "80px" }}>
                       <Image
@@ -203,7 +202,7 @@ export function Block3() {
 
             <Row gutter={[60, 50]} className={css.content}>
               <Col xs={24} md={24} lg={12}>
-                <div className={css.solutionText}>
+                <div className={[css.solutionText,css.solutionTextR].join(' ')}>
                   <div className={css.itemHead}>
                     <div style={{ width: "80px" }}>
                       <Image
