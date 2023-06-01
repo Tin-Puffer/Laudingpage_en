@@ -56,7 +56,7 @@ import dt8 from "./doitac/23.png";
 import dt9 from "./doitac/24.png";
 
 
-import logo from "./logo.png";
+import logo from "./Logo.png";
 
 
 
