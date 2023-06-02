@@ -150,8 +150,8 @@ export function BlockForm() {
               <div className={[css.contentLeft, cssF.conentItem].join(" ")}>
                 <form className={cssF.formClass} onSubmit={handleSubmit}>
                   <h2 style={{ margin: 0 }}>
-                    Đăng ký ngay 15 ngày dùng thử miễn phí hệ thống{" "}
-                    <span style={{ color: "#4262ef" }}> LogisForce</span>
+                    Đăng ký ngay <span style={{ color: "#4262ef" }}>15 ngày dùng thử miễn phí </span> hệ thống{" "}
+                     LogisForce
                   </h2>
                   <div className={cssF.boxInput}>
                     <p>Tên</p>
