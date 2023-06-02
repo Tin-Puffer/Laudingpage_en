@@ -10,11 +10,13 @@ import {
   B3icon3,
   B3icon4,
   B3icon5,
+  B3icon6,
   B3image1,
   B3image2,
   B3image3,
   B3image4,
   B3image5,
+  B3image6,
 } from "../public/staticImage/index";
 export function Block3() {
   return (
@@ -38,7 +40,7 @@ export function Block3() {
                     <div style={{ width: "55px" }}>
                       <Image
                         decoding="async"
-                        src={B3icon1}
+                        src={B3icon5}
                         alt="Amis Kế toán"
                         className={css.imageRepon}
                         data-ll-status="loaded"
@@ -96,7 +98,7 @@ export function Block3() {
                     <div style={{ width: "55px" }}>
                       <Image
                         decoding="async"
-                        src={B3icon2}
+                        src={B3icon1}
                         alt="Amis Kế toán"
                         className={css.imageRepon}
                         data-ll-status="loaded"
@@ -152,7 +154,7 @@ export function Block3() {
                     <div style={{ width: "55px" }}>
                       <Image
                         decoding="async"
-                        src={B3icon3}
+                        src={B3icon2}
                         alt="Amis Kế toán"
                         className={css.imageRepon}
                         data-ll-status="loaded"
@@ -210,7 +212,7 @@ export function Block3() {
                     <div style={{ width: "55px" }}>
                       <Image
                         decoding="async"
-                        src={B3icon4}
+                        src={B3icon3}
                         alt="Amis Kế toán"
                         className={css.imageRepon}
                         data-ll-status="loaded"
@@ -267,7 +269,7 @@ export function Block3() {
                     <div style={{ width: "55px" }}>
                       <Image
                         decoding="async"
-                        src={B3icon5}
+                        src={B3icon4}
                         alt="Amis Kế toán"
                         className={css.imageRepon}
                         data-ll-status="loaded"
@@ -304,6 +306,57 @@ export function Block3() {
                 <Image
                   decoding="async"
                   src={B3image5}
+                  alt="Đáp ứng đầy đủ các nghiệp vụ kế toán"
+                  className={css.ImageB3}
+                  data-ll-status="loaded"
+                />
+              </Col>
+            </Row>
+
+            <Row gutter={[60, 50]} className={css.content}>
+              <Col xs={24} md={24} lg={12}>
+                <div
+                  className={[css.solutionText, css.solutionTextR].join(" ")}
+                >
+                  <div className={css.itemHead}>
+                    <div style={{ width: "55px" }}>
+                      <Image
+                        decoding="async"
+                        src={B3icon6}
+                        alt="Amis Kế toán"
+                        className={css.imageRepon}
+                        data-ll-status="loaded"
+                      />
+                    </div>
+                    <h3 className={css.itemTitle}>
+                      Hệ sinh thái <span className=" blue-text">rộng lớn</span>
+                    </h3>
+                  </div>
+                  <div className={css.itemContent}>
+                    Với nhiều cộng đồng bao gồm cả đối tác, đội ngũ phát triển
+                    và người dùng cuối, tất cả đều là một phần trong hệ sinh
+                    thái Salesforce.
+                    <br />
+                    Doanh nghiệp có thể mở rộng hoạt động kinh doanh một cách dễ
+                    dàng với sự hỗ trợ từ AFR Solutions chúng tôi.
+                  </div>
+                  <div className={css.SlBtn}>
+                    <a className="scroll" href="#targetDiv">
+                      Đặt lịch tư vấn
+                    </a>
+                  </div>
+                </div>
+              </Col>
+              <Col
+                xs={24}
+                md={24}
+                lg={12}
+                className={css.ColItem}
+                // style={{ textAlign: "center", padding: "30px" }}
+              >
+                <Image
+                  decoding="async"
+                  src={B3image6}
                   alt="Đáp ứng đầy đủ các nghiệp vụ kế toán"
                   className={css.ImageB3}
                   data-ll-status="loaded"

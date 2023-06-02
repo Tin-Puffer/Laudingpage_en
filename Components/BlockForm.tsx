@@ -1,21 +1,36 @@
 import { Col, Row } from "antd";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { B3image1, B3image4, logoDk } from "../public/staticImage";
 import css from "./block1.module.scss";
 import cssF from "./blockForm.module.scss";
 import ReCAPTCHA from "react-google-recaptcha";
+interface FormData {
+  oid: string;
+  retURL: string;
+  first_name: string;
+  last_name: string;
+  email: string;
+  company: string;
+  phone: string;
+  field_00N0K00000LOsZ6: string;
+}
 export function BlockForm() {
-  const [formData, setFormData] = useState({
-    oid: "00D5i00000CIYXO",
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+  const [formData, setFormData] = useState<FormData>({
+    oid: "00D28000000rCfy",
     retURL: "google.com",
     first_name: "",
     last_name: "",
     email: "",
     company: "",
-    title: "",
     phone: "",
+    field_00N0K00000LOsZ6: "Managing Director (MD)",
   });
+
+  const [capcha, Setcapcha] = useState(false);
+
+  const [isCapcha, SetIsCapcha] = useState(false);
 
   const [load, setLoad] = useState(false);
   const [fname, sfname] = useState(false);
@@ -23,15 +38,26 @@ export function BlockForm() {
   const [emailType, setEmailType] = useState(false);
   const [emai, setEmail] = useState(false);
   const [company, setCompany] = useState(false);
-  const [title, setTitle] = useState(false);
+  // const [title, setTitle] = useState(false);
   const [phone, setPhone] = useState(false);
   const [phoneType, setPhoneType] = useState(false);
-  {
-    /* <script src="https://www.google.com/recaptcha/api.js"></script> */
-  }
+  // console.log(capcha, "c");
 
   //  function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
 
+  useEffect(() => {
+    if (recaptchaRef.current) {
+      recaptchaRef.current.reset();
+      if (isCapcha) SetIsCapcha(false);
+    }
+  }, [capcha]);
+  useEffect(() => {
+    if (!checkValueTosubmit() && capcha == false) {
+      Setcapcha(true);
+    } else if (checkValueTosubmit() && capcha != false) {
+      Setcapcha(false);
+    }
+  }, [formData]);
   const isValidEmail = (e: any) => {
     const { name, value } = e.target;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -66,14 +92,28 @@ export function BlockForm() {
     const url =
       "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8";
 
-    if (!checkValueTosubmit() && !load && !emailType && !phoneType) {
+    const params = new URLSearchParams();
+    Object.keys(formData).forEach((key) => {
+      const paramName = key.startsWith("field_") ? key.substr(6) : key;
+      params.set(paramName, (formData as any)[key]);
+    });
+
+    if (
+      !checkValueTosubmit() &&
+      !load &&
+      !emailType &&
+      !phoneType &&
+      isCapcha
+    ) {
       fetch(url, {
         method: "POST",
-        body: new URLSearchParams(formData),
+        // body: new URLSearchParams(formData),
+        body: params,
       })
         .then((response) => {
-          console.log(response);
           setLoad(false);
+          Setcapcha(false);
+
           setFormData({
             oid: "00D5i00000CIYXO",
             retURL: "google.com",
@@ -81,12 +121,14 @@ export function BlockForm() {
             last_name: "",
             email: "",
             company: "",
-            title: "",
+            field_00N0K00000LOsZ6: "Managing Director (MD)",
             phone: "",
           });
         })
         .catch((error) => {
           setLoad(false);
+          SetIsCapcha(false);
+          Setcapcha(false);
           console.log(error);
           setFormData({
             oid: "00D5i00000CIYXO",
@@ -95,15 +137,17 @@ export function BlockForm() {
             last_name: "",
             email: "",
             company: "",
-            title: "",
+            field_00N0K00000LOsZ6: "Managing Director (MD)",
             phone: "",
           });
           // Xử lý lỗi (nếu có)
-          alert("thông tin đã được ghi nhận");
+          alert("Thông tin đã được lưu lại");
         });
     } else {
       console.log("err");
       setLoad(false);
+      SetIsCapcha(false);
+      // Setcapcha(false);
     }
   };
   return (
@@ -113,12 +157,6 @@ export function BlockForm() {
         className={[css.container, cssF.bgi].join(" ")}
         id="targetDiv"
       >
-        <ReCAPTCHA
-          sitekey="6Lcc1l0mAAAAAEvCnUDUMKrb_YidoMLJlbA5TqRL "
-          onChange={() => {
-            console.log("fn");
-          }}
-        />
         ,
         <div className={[css.content].join(" ")}>
           <Row className={cssF.content} style={{}}>
@@ -200,24 +238,6 @@ export function BlockForm() {
                     {lname && <span> * Họ không được để trống </span>}
                   </div>{" "}
                   <div className={cssF.boxInput}>
-                    <p>Chức vụ</p>
-                    <input
-                      className={[cssF.inputfield, title && cssF.error].join(
-                        " "
-                      )}
-                      id="title"
-                      name="title"
-                      type="text"
-                      value={formData.title}
-                      onChange={handleInputChange}
-                      onBlur={(e) => {
-                        checkRequired(e, setTitle);
-                      }}
-                      onFocus={() => setTitle(false)}
-                    />
-                    {title && <span> * Chức vụ không được để trống </span>}
-                  </div>{" "}
-                  <div className={cssF.boxInput}>
                     <p>Email</p>
                     <input
                       className={[
@@ -293,13 +313,69 @@ export function BlockForm() {
                       <span> * Tên công ty không được để trống </span>
                     )}
                   </div>
+                  <div className={cssF.boxInput}>
+                    <p>Chức vụ</p>
+                    {/* <input
+                      className={[cssF.inputfield, title && cssF.error].join(
+                        " "
+                      )}
+                      id="title"
+                      name="title"
+                      type="text"
+                      value={formData.title}
+                      onChange={handleInputChange}
+                      onBlur={(e) => {
+                        checkRequired(e, setTitle);
+                      }}
+                      onFocus={() => setTitle(false)}
+                    />
+                    {title && <span> * Chức vụ không được để trống </span>} */}
+
+                    <select
+                      id="field_00N0K00000LOsZ6"
+                      name="field_00N0K00000LOsZ6"
+                      title="Job Title"
+                      onChange={handleInputChange}
+                      defaultValue="Managing Director (MD)"
+                      className={[cssF.inputfield].join(" ")}
+                    >
+                      {/* <option value="">--None--</option> */}
+                      <option value="Managing Director (MD)">
+                        Managing Director (MD)
+                      </option>
+                      <option value="Chief Executive Officer (CEO)">
+                        Chief Executive Officer (CEO)
+                      </option>
+                      <option value="Owner">Owner</option>
+                      <option value="Founder &amp; General Manager">
+                        Founder &amp; General Manager
+                      </option>
+                      <option value="Line Manager/Supervisor">
+                        Line Manager/Supervisor
+                      </option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>{" "}
+                  <div
+                    style={{ marginTop: "20px" }}
+                    className={!capcha ? cssF.noneCapcha : ""}
+                  >
+                    <ReCAPTCHA
+                      sitekey="6LeBFl4mAAAAAJZOqlWQqGITuF64KMbVHmGVDVkA"
+                      ref={recaptchaRef}
+                      onChange={() => {
+                        SetIsCapcha(true);
+                      }}
+                    />
+                  </div>
                   {/* Các trường dữ liệu khác */}
                   <div className={cssF.submit}>
                     <button
                       type="submit"
-                      className={[cssF.inputSubmit, load && cssF.loading].join(
-                        " "
-                      )}
+                      className={[
+                        cssF.inputSubmit,
+                        (!isCapcha || emailType || phoneType) && cssF.loading,
+                      ].join(" ")}
                     >
                       Nhận tư vấn miễn phí
                     </button>

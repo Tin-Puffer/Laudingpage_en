@@ -21,6 +21,8 @@ import B3icon4 from "./B3icon4.png";
 import B3image4 from "./B3image4.png";
 import B3icon5 from "./B3icon5.png";
 import B3image5 from "./security.png";
+import B3icon6 from "./B3icon6.png";
+import B3image6 from "./B3image6.png";
 import v1 from "./vantai/17.png";
 import v2 from "./vantai/18.png";
 import v3 from "./vantai/19.png";
@@ -85,6 +87,8 @@ export{ banner, Icon,B3 ,i1,i2,i3,i4,i5,i6,B1L ,
     B3image4,
     B3icon5,
     B3image5,
+    B3icon6,
+    B3image6,
     v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12,v13,
     l1,l2,l3,l4,
     c1,c2,c3,c4,

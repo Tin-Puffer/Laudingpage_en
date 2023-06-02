@@ -37,7 +37,7 @@ export function Footer() {
                   <p>Liên hệ trực tiếp:</p>
                   <div className={css.FlexItem}>
                     <Image src={f4} alt="lien he" className={css.IconF}></Image>
-                    <p>84-97-540-4208 (Mr. Tâm)</p>
+                    <p>+84-97-540-4208 (Mr. Tâm)</p>
                   </div>
                   <div className={css.FlexItem}>
                     <Image src={f5} alt="mail" className={css.IconF}></Image>

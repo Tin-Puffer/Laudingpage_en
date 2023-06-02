@@ -66,6 +66,9 @@
         border-color: #ff9c9c;
     }
 }
+.noneCapcha{
+    display: none;
+}
 .inputSubmit{
     width: auto!important;
     border-radius: 30px!important;
@@ -78,8 +81,9 @@
     font-weight: bold;
    border: none;
    color: white;
-   .loading{
-    opacity: 0.5;
+   &.loading{
+    opacity: 0.5 !important;
+    // &:hover{ op}
    }
    &:hover{
     cursor: pointer;
