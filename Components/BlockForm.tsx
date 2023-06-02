@@ -313,7 +313,7 @@ export function BlockForm() {
                       <span> * Tên công ty không được để trống </span>
                     )}
                   </div>
-                  <div className={cssF.boxInput}>
+                  <div className={cssF.boxInput} style={{ color: "black" }}>
                     <p>Chức vụ</p>
                     {/* <input
                       className={[cssF.inputfield, title && cssF.error].join(

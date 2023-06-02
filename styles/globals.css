@@ -10,7 +10,11 @@ body {
     
 }
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -o-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
 }
 a {
   color: inherit;
