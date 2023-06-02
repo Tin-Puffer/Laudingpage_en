@@ -4,7 +4,7 @@ import { useState } from "react";
 import { B3image1, B3image4, logoDk } from "../public/staticImage";
 import css from "./block1.module.scss";
 import cssF from "./blockForm.module.scss";
-
+import ReCAPTCHA from "react-google-recaptcha";
 export function BlockForm() {
   const [formData, setFormData] = useState({
     oid: "00D5i00000CIYXO",
@@ -113,6 +113,13 @@ export function BlockForm() {
         className={[css.container, cssF.bgi].join(" ")}
         id="targetDiv"
       >
+        <ReCAPTCHA
+          sitekey="6Lcc1l0mAAAAAEvCnUDUMKrb_YidoMLJlbA5TqRL "
+          onChange={() => {
+            console.log("fn");
+          }}
+        />
+        ,
         <div className={[css.content].join(" ")}>
           <Row className={cssF.content} style={{}}>
             <Col className={css.colCustom} xs={24} md={18} lg={12}>
@@ -150,8 +157,11 @@ export function BlockForm() {
               <div className={[css.contentLeft, cssF.conentItem].join(" ")}>
                 <form className={cssF.formClass} onSubmit={handleSubmit}>
                   <h2 style={{ margin: 0 }}>
-                    Đăng ký ngay <span style={{ color: "#4262ef" }}>15 ngày dùng thử miễn phí </span> hệ thống{" "}
-                     LogisForce
+                    Đăng ký ngay{" "}
+                    <span style={{ color: "#4262ef" }}>
+                      15 ngày dùng thử miễn phí{" "}
+                    </span>{" "}
+                    hệ thống LogisForce
                   </h2>
                   <div className={cssF.boxInput}>
                     <p>Tên</p>
