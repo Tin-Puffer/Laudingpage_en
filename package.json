@@ -26,5 +26,8 @@
     "redux-saga": "^1.2.1",
     "sass": "^1.62.1",
     "typescript": "4.9.3"
+  },
+  "devDependencies": {
+    "@types/react-google-recaptcha": "^2.1.5"
   }
 }
