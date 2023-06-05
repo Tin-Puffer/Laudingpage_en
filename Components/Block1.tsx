@@ -33,7 +33,7 @@ export function Block1() {
                     Sign up for a consultation
                   </a>
                   <a className={css.btnBuy} href="#targetDiv">
-                    By Now
+                    Buy Now
                   </a>
                 </div>
               </div>
