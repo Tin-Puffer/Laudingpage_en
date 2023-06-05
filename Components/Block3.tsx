@@ -29,8 +29,8 @@ export function Block3() {
           <Row>
             <Col span={24} className={cssB1.colMg}>
               <h2 className={cssB2.titleh2}>
-                LogisForce - Tối ưu hóa chi phí và quy trình vận hành
-                <p style={{ margin: "0" }}>cho doanh nghiệp Logistics </p>
+                LogisForce - Provide low-cost services and help enhance
+                <p style={{ margin: "0" }}>Logistics business performance </p>
               </h2>
             </Col>
             <Row gutter={[60, 50]} className={css.content}>
@@ -47,20 +47,20 @@ export function Block3() {
                       />
                     </div>
                     <h3 className={css.itemTitle}>
-                      Dễ dàng <span className=" blue-text">tùy biến</span>
+                      Conveniently{" "}
+                      <span className=" blue-text">Customizable</span>
                     </h3>
                   </div>
                   <div className={css.itemContent}>
-                    Với các công cụ sẵn có, bạn dễ dàng tùy biến hệ thống chỉ
-                    trong thời gian ngắn.
+                    Using the available tools, you can quickly personalize your
+                    system. For example, changing processes, adding modules for
                     <br />
-                    Từ thay đổi các quy trình, thêm các mô-đun quản lý, hay xây
-                    dựng ứng dụng mới… tất cả đều có thể thực hiện chỉ với một
-                    cú nhấp chuột.
+                    management, or building new app... all of them will be done
+                    with just click in LogisForce.
                   </div>
                   <div className={css.SlBtn}>
                     <a className="scroll" href="#targetDiv">
-                      Đặt lịch tư vấn
+                      Register Now
                     </a>
                   </div>
                 </div>
@@ -105,20 +105,21 @@ export function Block3() {
                       />
                     </div>
                     <h3 className={css.itemTitle}>
-                      Nền tảng <span className=" blue-text">thống nhất</span>
+                      Universal
+                      <span className=" blue-text"> Platform</span>
                     </h3>
                   </div>
                   <div className={css.itemContent}>
-                    Sử dụng một nền tảng cùng cơ sở hạ tầng đồng nhất mang đến
-                    nhiều lợi ích cho mọi doanh nghiệp.
+                    Using a single platform and infrastructure has advantages
+                    for business of all sizes. Customer data is safe and secure
+                    .
                     <br />
-                    Thiết kế đa khách hàng của Salesforce mang đến sự an toàn và
-                    bảo mật cho dữ liệu khách hàng của doanh nghiệp, không còn
-                    lệ thuộc vào sự tham gia trực tiếp của khách.
+                    because of the multi-tenant design of Salesforce
+                    development. Customer no longer have to get involved.
                   </div>
                   <div className={css.SlBtn}>
                     <a className="scroll" href="#targetDiv">
-                      Đặt lịch tư vấn
+                      Register Now
                     </a>
                   </div>
                 </div>
@@ -161,20 +162,21 @@ export function Block3() {
                       />
                     </div>
                     <h3 className={css.itemTitle}>
-                      Tích Hợp <span className=" blue-text"> đa nền tảng</span>
+                      Suitable for a Wide
+                      <span className=" blue-text"> range of platform </span>
                     </h3>
                   </div>
                   <div className={css.itemContent}>
-                    LogisForce có khả năng tích hợp với các ứng dụng bên thứ ba
-                    khác.
+                    LogisForce is capable of integrating with a variety of
+                    third-party applications.
                     <br />
-                    Nhờ vào định danh mở (API), việc tích hợp giờ đây đã trở nên
-                    khả thi hơn khi LogisForce có thể tích hợp với các nền tảng
-                    như Google Cloud, Dropbox, Mailchimp,…
+                    Fortunately, it&apos;s all made possible through an open API
+                    to connect with other platform like: Google cloud, dropbox,
+                    mailchimp....
                   </div>
                   <div className={css.SlBtn}>
                     <a className="scroll" href="#targetDiv">
-                      Đặt lịch tư vấn
+                      Register Now
                     </a>
                   </div>
                 </div>
@@ -219,21 +221,21 @@ export function Block3() {
                       />
                     </div>
                     <h3 className={css.itemTitle}>
-                      Công cụ báo cáo{" "}
-                      <span className=" blue-text">vượt trội</span>
+                      Excellent
+                      <span className=" blue-text"> Reporting Tools</span>
                     </h3>
                   </div>
                   <div className={css.itemContent}>
-                    LogisForce cung cấp nhiều lựa chọn báo cáo giúp người dùng
-                    tiết kiệm thời gian và chi phí phân tích dữ liệu.
+                    LogisForce provide a variety of reporting options that may
+                    save you both time and money when it comes to analyzing
+                    data.
                     <br />
-                    Doanh nghiệp có thể sử dụng công cụ sẵn có của LogisForce để
-                    cải thiện vận hành qua các báo cáo chi tiết về các bộ phận
-                    như Sales, Cus, Docs, Op, Accounting….
+                    You may use LogisForce tool to improve your firm by getting
+                    a clearer picture of Sales, Cus, Docs, Op, Accounting….
                   </div>
                   <div className={css.SlBtn}>
                     <a className="scroll" href="#targetDiv">
-                      Đặt lịch tư vấn
+                      Register Now
                     </a>
                   </div>
                 </div>
@@ -276,22 +278,21 @@ export function Block3() {
                       />
                     </div>
                     <h3 className={css.itemTitle}>
-                      <span className=" blue-text"> An toàn </span> và{" "}
-                      <span className=" blue-text"> bảo mật</span>
+                      <span className=" blue-text">Security</span> and{" "}
+                      <span className=" blue-text"> Safety</span>
                     </h3>
                   </div>
                   <div className={css.itemContent}>
-                    Được xây dựng trên nền tảng Salesforce, LogisForce là phần
-                    mềm dạng dịch vụ cung cấp chiến lược bảo mật dữ liệu linh
-                    hoạt và dễ dàng.
+                    LogisForce is built on Salesforce platform, is a SaaS that
+                    provides a flexible and easy data security strategy. Using
+                    it&apos;s pre-installed .
                     <br />
-                    Với các tính năng bảo mặt có sẵn, các chủ doanh nghiệp và
-                    quản lý có thể chỉ định những ai có quyền truy cập thông tin
-                    mật của công ty.
+                    security features, business owner and manager may select the
+                    individuals who can access company information.
                   </div>
                   <div className={css.SlBtn}>
                     <a className="scroll" href="#targetDiv">
-                      Đặt lịch tư vấn
+                      Register Now
                     </a>
                   </div>
                 </div>
@@ -329,20 +330,20 @@ export function Block3() {
                       />
                     </div>
                     <h3 className={css.itemTitle}>
-                      Hệ sinh thái <span className=" blue-text">rộng lớn</span>
+                      Vast {" "}
+                      <span className=" blue-text">Ecosystem</span>
                     </h3>
                   </div>
                   <div className={css.itemContent}>
-                    Với nhiều cộng đồng bao gồm cả đối tác, đội ngũ phát triển
-                    và người dùng cuối, tất cả đều là một phần trong hệ sinh
-                    thái Salesforce.
+                    A wide range of communities, including partner, developers,
+                    and end-users, are all part of the salesforce eco-system.
                     <br />
-                    Doanh nghiệp có thể mở rộng hoạt động kinh doanh một cách dễ
-                    dàng với sự hỗ trợ từ AFR Solutions chúng tôi.
+                    It&apos;s easy for your company if one day you want to expand
+                    your business, we are here to accompany.
                   </div>
                   <div className={css.SlBtn}>
                     <a className="scroll" href="#targetDiv">
-                      Đặt lịch tư vấn
+                      Register Now
                     </a>
                   </div>
                 </div>

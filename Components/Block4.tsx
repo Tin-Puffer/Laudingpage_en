@@ -39,8 +39,8 @@ export function Block4() {
           <Row style={{ width: "100%" }}>
             <Col span={24} style={{ marginBottom: "30px" }}>
               <h2 className={cssB2.titleh2}>
-                LogisForce tự hào là giải pháp tối ưu hoạt động cho nhiều
-                <p style={{ margin: "0" }}>doanh nghiệp Logistics</p>
+                LogisForce is proud to be the optimal solution for many
+                <p style={{ margin: "0" }}>logistics businesses</p>
               </h2>
             </Col>
             <Row style={{ margin: 0, width: "100%" }}>
@@ -52,7 +52,7 @@ export function Block4() {
               >
                 <div>
                   <div className={css.includeTitle}>
-                    <p className={css.title}>Thương mại & Bán lẻ</p>
+                    <p className={css.title}> Retail & Trading</p>
 
                     <Row className={cssB2.reasonItem} style={{ width: "100%" }}>
                       <Col span={24}>
@@ -93,8 +93,11 @@ export function Block4() {
                       </Col>
                     </Row>
                   </div>
-                  <div className={css.includeTitle} style={{marginTop: "30px"}}>
-                    <p className={css.title}>Công nghệ</p>
+                  <div
+                    className={css.includeTitle}
+                    style={{ marginTop: "30px" }}
+                  >
+                    <p className={css.title}>Hi-tech</p>
                     <Row className={cssB2.reasonItem} style={{ width: "100%" }}>
                       <Col span={24}>
                         <Row style={{ margin: 0, width: "100%" }}>
@@ -143,7 +146,7 @@ export function Block4() {
                 className={[css.box, css.boxRight].join(" ")}
               >
                 <div className={css.includeTitle}>
-                  <p className={css.title}>Vận tải giao nhận</p>
+                  <p className={css.title}> Logistics & Forwarder</p>
                   <div
                     className={[cssB2.reasonItem, css.CoplistVT].join(" ")}
                     style={{ width: "100%" }}
@@ -172,7 +175,7 @@ export function Block4() {
             <Row gutter={60} className={css.MGr}>
               <Col xs={24} md={8} className={[css.box].join(" ")}>
                 <div className={css.includeTitle}>
-                  <p className={css.title}>Tư vấn</p>
+                  <p className={css.title}>Consulting</p>
                   <div
                     className={cssB2.reasonItem}
                     style={{ width: "100%", justifyContent: "center" }}
@@ -183,7 +186,7 @@ export function Block4() {
               </Col>
               <Col xs={24} md={8} className={[css.box].join(" ")}>
                 <div className={css.includeTitle}>
-                  <p className={css.title}>Sản xuất</p>
+                  <p className={css.title}> Manufacture</p>
                   <div
                     className={cssB2.reasonItem}
                     style={{ width: "100%", justifyContent: "center" }}
@@ -194,7 +197,7 @@ export function Block4() {
               </Col>
               <Col xs={24} md={8} className={[css.box].join(" ")}>
                 <div className={css.includeTitle}>
-                  <p className={css.title}>Tài chính</p>
+                  <p className={css.title}>Finance</p>
                   <div
                     className={cssB2.reasonItem}
                     style={{ width: "100%", justifyContent: "center" }}

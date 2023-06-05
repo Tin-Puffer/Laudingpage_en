@@ -140,7 +140,7 @@ export function BlockForm() {
             phone: "",
           });
           // Xử lý lỗi (nếu có)
-          alert("Thông tin đã được lưu lại");
+          alert("information has been saved");
         });
     } else {
       console.log("err");
@@ -172,12 +172,11 @@ export function BlockForm() {
                 </div>
 
                 <h1 className={css.title2}>
-                  Đăng ký trải nghiệm, khám phá sức mạnh đột phá của Hệ thống
-                  LogisForce
+                  Register to get free trial program
                 </h1>
                 <div className={css.decription}>
-                  LogisForce - Tối ưu chi phí, nâng cao hiệu quả vận hành doanh
-                  nghiệp Logistics
+                  ogisforce - Saving cost and enhancing your business
+                  performance
                 </div>
                 <Col xs={0} lg={24} sm={0}>
                   <Image
@@ -194,32 +193,14 @@ export function BlockForm() {
               <div className={[css.contentLeft, cssF.conentItem].join(" ")}>
                 <form className={cssF.formClass} onSubmit={handleSubmit}>
                   <h2 style={{ margin: 0 }}>
-                    Đăng ký ngay{" "}
+                    Register now{" "}
                     <span style={{ color: "#4262ef" }}>
-                      15 ngày dùng thử miễn phí{" "}
+                      for 15 days free trial{" "}
                     </span>{" "}
-                    hệ thống LogisForce
+                    of LogisForce system
                   </h2>
                   <div className={cssF.boxInput}>
-                    <p>Tên</p>
-                    <input
-                      className={[cssF.inputfield, fname && cssF.error].join(
-                        " "
-                      )}
-                      id="first_name"
-                      name="first_name"
-                      type="text"
-                      value={formData.first_name}
-                      onChange={handleInputChange}
-                      onBlur={(e) => {
-                        checkRequired(e, sfname);
-                      }}
-                      onFocus={() => sfname(false)}
-                    />
-                    {fname && <span> * Tên không được để trống </span>}
-                  </div>
-                  <div className={cssF.boxInput}>
-                    <p>Họ</p>
+                    <p>First name</p>
                     <input
                       className={[cssF.inputfield, lname && cssF.error].join(
                         " "
@@ -234,10 +215,28 @@ export function BlockForm() {
                       }}
                       onFocus={() => slname(false)}
                     />
-                    {lname && <span> * Họ không được để trống </span>}
+                    {lname && <span> * First name required </span>}
                   </div>{" "}
                   <div className={cssF.boxInput}>
-                    <p>Email</p>
+                    <p>Last name</p>
+                    <input
+                      className={[cssF.inputfield, fname && cssF.error].join(
+                        " "
+                      )}
+                      id="first_name"
+                      name="first_name"
+                      type="text"
+                      value={formData.first_name}
+                      onChange={handleInputChange}
+                      onBlur={(e) => {
+                        checkRequired(e, sfname);
+                      }}
+                      onFocus={() => sfname(false)}
+                    />
+                    {fname && <span> * Last name required </span>}
+                  </div>
+                  <div className={cssF.boxInput}>
+                    <p>Email address</p>
                     <input
                       className={[
                         cssF.inputfield,
@@ -257,16 +256,16 @@ export function BlockForm() {
                         setEmailType(false);
                       }}
                     />
-                    {emai && <span> * Email không được để trống </span>}
+                    {emai && <span> * Email address required </span>}
                     {!emai && emailType && (
                       <span>
                         {" "}
-                        * Email phải có định dạng | ex: abc@gmail.com{" "}
+                        * Email must be in the format | ex: abc@gmail.com{" "}
                       </span>
                     )}
                   </div>{" "}
                   <div className={cssF.boxInput}>
-                    <p>Điện thoại</p>
+                    <p>Phone number</p>
                     <input
                       className={[
                         cssF.inputfield,
@@ -287,13 +286,13 @@ export function BlockForm() {
                         setPhone(false);
                       }}
                     />
-                    {phone && <span> * SĐT không được để trống </span>}
+                    {phone && <span> * Phone number required </span>}
                     {!phone && phoneType && (
-                      <span> * Vui lòng nhập đúng định dạng SĐT </span>
+                      <span> * Please enter the correct phone number </span>
                     )}
                   </div>
                   <div className={cssF.boxInput}>
-                    <p>Tên công ty</p>
+                    <p>Company</p>
                     <input
                       className={[cssF.inputfield, company && cssF.error].join(
                         " "
@@ -308,12 +307,10 @@ export function BlockForm() {
                       }}
                       onFocus={() => setCompany(false)}
                     />
-                    {company && (
-                      <span> * Tên công ty không được để trống </span>
-                    )}
+                    {company && <span> * Company required </span>}
                   </div>
                   <div className={cssF.boxInput} style={{ color: "black" }}>
-                    <p>Chức vụ</p>
+                    <p>Title</p>
                     {/* <input
                       className={[cssF.inputfield, title && cssF.error].join(
                         " "
@@ -376,7 +373,7 @@ export function BlockForm() {
                         (!isCapcha || emailType || phoneType) && cssF.loading,
                       ].join(" ")}
                     >
-                      Nhận tư vấn miễn phí
+                      Register
                     </button>
                     {/* <input
                       className={[cssF.inputSubmit, load && cssF.loading].join(

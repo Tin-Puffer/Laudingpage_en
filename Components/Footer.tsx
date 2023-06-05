@@ -23,19 +23,17 @@ export function Footer() {
             <Row className={css.gridLR} gutter={[50, 30]}>
               <Col xs={24} sm={24} md={12} lg={16} className={css.Colcust}>
                 <div className={css.content}>
-                  <h2 style={{ margin: "10px 0" }}>
-                    CÔNG TY CỔ PHẦN AFR CLOUD COMPUTING
-                  </h2>
-                  <p>Văn phòng Việt Nam:</p>
+                  <h2 style={{ margin: "10px 0" }}>AFR Cloud Computing JSC</h2>
+                  <p>Việt Nam Branch:</p>
                   <p>
-                    Tòa nhà Emerald Building - 37 Huỳnh Tịnh Của, phường 8, quận
-                    3, thành phố Hồ Chí Minh.
+                    37 Huynh Tinh Cua Street, Ward 8, District 3, Ho Chi Minh
+                    City, Vietnam (Emerald Building).
                   </p>
                 </div>
               </Col>
               <Col xs={24} sm={24} md={12} lg={8} className={css.Colcust}>
                 <div className={[css.content, css.Rit].join(" ")}>
-                  <p>Liên hệ trực tiếp:</p>
+                  <p>LContact us:</p>
                   <div className={css.FlexItem}>
                     <Image src={f4} alt="lien he" className={css.IconF}></Image>
                     <p>+84-97-540-4208 (Mr. Tâm)</p>

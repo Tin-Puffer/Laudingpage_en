@@ -2,16 +2,7 @@ import css from "./block2.module.scss";
 import cssB1 from "./block1.module.scss";
 import { Col, Row } from "antd";
 import Image from "next/image";
-import {
-
-  i1,
-  i2,
-  i3,
-  i4,
-  i5,
-  i6,
-
-} from "../public/staticImage/index";
+import { i1, i2, i3, i4, i5, i6 } from "../public/staticImage/index";
 export function Block2() {
   return (
     <>
@@ -23,7 +14,7 @@ export function Block2() {
           <Row>
             <Col span={24}>
               <h2 className={css.titleh2}>
-                Trải nghiệm đầy đủ các tính năng cao cấp LogisForce{" "}
+                The premium features of Logisforce system{" "}
               </h2>
             </Col>
             <Row className={css.reasonWrap} gutter={[50, 30]}>
@@ -45,7 +36,7 @@ export function Block2() {
                     </div> */}
                     <div className={css.des}>
                       <div>
-                        Quản lý thông tin khách hàng, đối tác và nhà cung cấp{" "}
+                        Manage Customer, Partner, and Vendor Information
                       </div>
                       {/* <div>Tự động tổng hợp báo cáo thuế, BCTC chính xác, </div> */}
                     </div>
@@ -69,7 +60,7 @@ export function Block2() {
                       <span style={{ color: "#4262ef" }}>năng suất</span>
                     </div> */}
                     <div className={css.des}>
-                      <div>Quản lý và in ấn báo giá</div>
+                      <div>Manage & Print Quotation</div>
                       {/* <div>Tự động tổng hợp báo cáo thuế, BCTC chính xác, </div> */}
                     </div>
                   </div>
@@ -92,7 +83,10 @@ export function Block2() {
                       <span style={{ color: "#4262ef" }}>năng suất</span>
                     </div> */}
                     <div className={css.des}>
-                      <div>Quản lý lô hàng FCL, LCL, Consol, Logistics...</div>
+                      <div>
+                        Create & Manage Shipment (Ocean Export, Ocean Import,
+                        Air Export, Air Import)
+                      </div>
                       {/* <div>Tự động tổng hợp báo cáo thuế, BCTC chính xác, </div> */}
                     </div>
                   </div>
@@ -116,8 +110,8 @@ export function Block2() {
                     </div> */}
                     <div className={css.des}>
                       <div>
-                        In tất cả các chứng từ HBL, HAWB, AN, Recharge và Tax
-                        Invoice...
+                        Print all documents: HBL, HAWB, AN, DO, Reimbursement,
+                        Tax Invoice,...
                       </div>
                       {/* <div>Tự động tổng hợp báo cáo thuế, BCTC chính xác, </div> */}
                     </div>
@@ -141,7 +135,7 @@ export function Block2() {
                       <span style={{ color: "#4262ef" }}>năng suất</span>
                     </div> */}
                     <div className={css.des}>
-                      <div>Quản lý quy trình phê duyệt online</div>
+                      <div>Manage the online approval process</div>
                       {/* <div>Tự động tổng hợp báo cáo thuế, BCTC chính xác, </div> */}
                     </div>
                   </div>
@@ -164,7 +158,9 @@ export function Block2() {
                       <span style={{ color: "#4262ef" }}>năng suất</span>
                     </div> */}
                     <div className={css.des}>
-                      <div>Quản lý giá mua từ hãng tàu, nhà cung cấp</div>
+                      <div>
+                        Manage purchase prices from shipping lines, suppliers
+                      </div>
                       {/* <div>Tự động tổng hợp báo cáo thuế, BCTC chính xác, </div> */}
                     </div>
                   </div>
@@ -172,7 +168,7 @@ export function Block2() {
               </Col>
             </Row>
             <Col span={24} className={css.buttonTry}>
-              <a href="#targetDiv">Dùng thử miễn phí</a>
+              <a href="#targetDiv">Get started for free</a>
             </Col>
           </Row>
         </div>
