@@ -14,17 +14,18 @@ export function Footer() {
         className={cssB2.reason}
         style={{ background: "white", padding: "0", color: "black" }}
       >
-        <div className={cssB1.content}>
-          <Row className={css.Rowcuts}>
-            <Col xs={20} sm={12} md={7}>
+        <div className={cssB1.content} style={{ overflow: "hidden" }}>
+          <Row className={css.Rowcuts} gutter={50}>
+            <Col span={24}>
               <Image src={logo} className={css.imageLogo} alt="logoCty"></Image>
             </Col>
-            <Col span={24}>
-              <h2>CÔNG TY CỔ PHẦN AFR CLOUD COMPUTING</h2>
-            </Col>
-            <Row gutter={[80, 30]} className={css.gridLR}>
-              <Col xs={24} sm={24} md={12} className={css.Colcust}>
+            {/* <Col span={24}></Col> */}
+            <Row className={css.gridLR} gutter={[50, 30]}>
+              <Col xs={24} sm={24} md={12} lg={16} className={css.Colcust}>
                 <div className={css.content}>
+                  <h2 style={{ margin: "10px 0" }}>
+                    CÔNG TY CỔ PHẦN AFR CLOUD COMPUTING
+                  </h2>
                   <p>Văn phòng Việt Nam:</p>
                   <p>
                     Tòa nhà Emerald Building - 37 Huỳnh Tịnh Của, phường 8, quận
@@ -33,7 +34,7 @@ export function Footer() {
                 </div>
               </Col>
               <Col xs={24} sm={24} md={12} lg={8} className={css.Colcust}>
-                <div className={css.content}>
+                <div className={[css.content, css.Rit].join(" ")}>
                   <p>Liên hệ trực tiếp:</p>
                   <div className={css.FlexItem}>
                     <Image src={f4} alt="lien he" className={css.IconF}></Image>

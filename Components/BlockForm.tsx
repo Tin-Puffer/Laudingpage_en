@@ -113,7 +113,6 @@ export function BlockForm() {
         .then((response) => {
           setLoad(false);
           Setcapcha(false);
-
           setFormData({
             oid: "00D5i00000CIYXO",
             retURL: "google.com",

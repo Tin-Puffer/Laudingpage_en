@@ -161,7 +161,7 @@ export function Block3() {
                       />
                     </div>
                     <h3 className={css.itemTitle}>
-                      Thích Hợp <span className=" blue-text"> đa nền tảng</span>
+                      Tích Hợp <span className=" blue-text"> đa nền tảng</span>
                     </h3>
                   </div>
                   <div className={css.itemContent}>

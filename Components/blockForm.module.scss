@@ -83,6 +83,9 @@
    color: white;
    &.loading{
     opacity: 0.5 !important;
+    &:hover{
+        cursor: default;
+    }
     // &:hover{ op}
    }
    &:hover{
