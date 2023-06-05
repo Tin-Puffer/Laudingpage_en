@@ -167,9 +167,28 @@ export function Block2() {
                 </div>
               </Col>
             </Row>
-            <Col span={24} className={css.buttonTry}>
-              <a href="#targetDiv">Get started for free</a>
+            <Col xs={24} md={24} className={css.buttonTry}>
+              <Row style={{width:"100%"}} gutter={50}>
+                <Col xs={24} md={12} >
+                  <a href="#targetDiv" className={css.BtnBlue}>
+                    Get started for free
+                  </a>
+                </Col>
+
+                <Col xs={24} md={12} >
+                  <a
+                    href="https://drive.google.com/file/d/1rkgyuX5AGp1N3qwkWkcnoUWQav0i93be/view?usp=sharing"
+                    target={"_blank"}
+                    rel="noreferrer"
+                    className={css.BtnOr}
+                  >
+                    For more details
+                  </a>
+                </Col>
+              </Row>
             </Col>
+            {/* <Col xs={24} md={12}  className={css.buttonTry}>
+            </Col> */}
           </Row>
         </div>
       </div>

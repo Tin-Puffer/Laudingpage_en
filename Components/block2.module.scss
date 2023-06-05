@@ -6,19 +6,49 @@
    .buttonTry{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding-top: 30px;
     a{
-        color: #fff;
-        text-align: center;
-        padding: 12px 50px 10px 22px;
-        border-radius: 25px;
-        font-size: 17px;
-        font-weight: bold;
-        background: #4262ef url('https://amis.misa.vn/sites/amis/images/pages/amis-accounting/ic_arrow-right-white.svg')  no-repeat;
-        background-position: right 18px top 19px;
-        background-size: 16px;
+    
+        width: 80%;
+    max-width: 200px;
+    display: block;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: bold;
+    background-size: 17px;
+    font-size: 16px;
+    margin-bottom: 10px;
+
+
     }
-   }
+    a:hover{
+        opacity: .8;
+    }
+    
+}
+.BtnBlue{
+   margin-left: auto;
+   
+    text-align: center;
+    padding: 10px 22px 10px 22px;
+
+
+    background: #4262ef;
+    background-position: right 18px top 19px;
+}
+.BtnOr{
+    margin-right: auto;
+
+
+    text-align: center;
+    padding: 10px 22px 10px 22px;
+
+
+    background-color: #f68645;
+
+
+}
 
     .titleh2{
         color: black;
@@ -74,4 +104,10 @@ align-items: center;
 .reasonItemImg{
     width: 40px;
 }
+}
+@media only screen and (max-width: 770px){
+    .BtnBlue,
+    .BtnOr{
+        margin: auto;
+    }
 }
